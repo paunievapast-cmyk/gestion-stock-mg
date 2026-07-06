@@ -93,7 +93,7 @@ if uploaded_file:
             
             # REGLA 1: El Máximo nunca puede ser menor al ROP
             if stock_max <= rop:
-                stock_max = rop + 1
+                stock_max = rop
             
             # REGLA 2: Especial Bujías (Múltiplo de 10 y >= ROP)
             if "BUJIA" in nombre.upper():
