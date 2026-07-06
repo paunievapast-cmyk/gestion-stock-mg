@@ -90,7 +90,7 @@ if check_password():
         if os.path.exists(logo_path):
             st.image(logo_path, use_column_width=True)
         st.markdown("---")
-        st.subheader("Configuración")
+        st.markdown("<h3 style='color: white;'>Configuración</h3>", unsafe_allow_html=True)
         alpha = st.select_slider("Sensibilidad (Alpha)", options=[0.05, 0.1, 0.15, 0.2, 0.3], value=0.1)
         z_val = st.selectbox("Nivel de Servicio", [1.96, 2.33], format_func=lambda x: "95%" if x == 1.96 else "99%")
         t_review = st.number_input("Intervalo de Revisión (Meses)", value=1.0)
