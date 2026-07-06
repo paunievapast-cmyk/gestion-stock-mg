@@ -128,7 +128,7 @@ if check_password():
                 rop = np.ceil((d_media * L) + ss)
                 stock_max = np.ceil((d_media * (t_review + L)) + ss)
                 
-                if stock_max <= rop: stock_max = rop + 1
+                if stock_max <= rop: stock_max = rop
                 if "BUJIA" in nombre.upper():
                     stock_max = np.ceil(stock_max / 10) * 10
                     if stock_max <= rop: stock_max += 10
