@@ -88,7 +88,7 @@ if check_password():
     logo_path = "logo_citrus.png"
     with st.sidebar:
         if os.path.exists(logo_path):
-            st.image(logo_path, use_column_width=True)
+            st.image(logo_path, use_container_width=True)
         st.markdown("---")
         st.markdown("<h3 style='color: white;'>Configuración</h3>", unsafe_allow_html=True)
         alpha = st.select_slider("Sensibilidad (Alpha)", options=[0.05, 0.1, 0.15, 0.2, 0.3], value=0.1)
