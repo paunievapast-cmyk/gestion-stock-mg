@@ -1,0 +1,23 @@
+[server]
+# Protecciones activas (no desactivar en producción)
+enableXsrfProtection = true
+enableCORS = true
+maxUploadSize = 10            # MB
+enableStaticServing = false
+
+[client]
+showErrorDetails = "none"     # No mostrar trazas de error al usuario
+toolbarMode = "viewer"
+
+[browser]
+gatherUsageStats = false
+
+[runner]
+magicEnabled = false
+
+[theme]
+base = "light"
+primaryColor = "#006837"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F6F9F7"
+textColor = "#212529"
